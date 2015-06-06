@@ -1,0 +1,203 @@
+body { color: #272727;background-color : #000000;font-size: 12px; font-family: /*"lucida sans unicode",*/Verdana, Arial, Helvetica, sans-serif; margin: 0px; padding: 0px;}
+
+table {width: 100%;text-align: left;}
+table.toptable , table.maintable , table.footertable{width: 85%;margin-left: auto;margin-right: auto;}
+table td {padding: 0; border-width: 0; vertical-align: top;font-size: 12px;font-family: /*"lucida sans unicode",*/Verdana, Arial, Helvetica, sans-serif;}
+
+table.maintable {height:500px;background-color : #000000; color: #c0e3fa;padding-top:25px;}
+table.toptable {padding-top:25px;}
+div {font-size: 12px;}
+
+#Stitle {text-align: left; position: relative; top: 1px; left: 3px;color: #FFF;}
+#Sslogan {text-align: left; position: relative; bottom: 5px; right: 5px;color: #FFF;}
+
+a {color: #0472eb; text-decoration: none; font-weight: bold; background-color: transparent;}
+a:hover {color: #0540e8;}
+
+h1 {font-size: 2.3em; font-weight: bold;}
+h2 {font-size: 1.9em; font-weight: bold;}
+h3 {font-size: 1.6em; font-weight: bold;}
+h4 {font-size: 1.3em; font-weight: bold;}
+h5 {font-size: 1.0em; font-weight: bold;}
+ul { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px;list-style: circle inside; color: #99a0a7}
+
+input.formButton {}
+
+.item {border: 1px solid #cccccc;}
+.itemHead {padding: 3px; color: #FFFFFF;}
+.itemInfo {text-align: right; padding: 3px; background-color: #efefef}
+.itemTitle a {font-size: 130%; font-weight: bold; font-variant: small-caps; color: #ffffff; background-color: transparent;}
+.itemPoster {font-size: 90%; font-style:italic;}
+.itemPostDate {font-size: 90%; font-style:italic;}
+.itemStats {font-size: 90%; font-style:italic;}
+.itemBody {padding-left: 5px;}
+.itemText {margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;}
+.itemText:first-letter {font-size: 133%; font-weight: bold;}
+.itemFoot {text-align: right; padding: 3px; background-color: #efefef}
+.itemAdminLink {font-size: 90%;}
+.itemPermaLink {font-size: 90%;}
+
+th {background-image: url(visual/th.png);background-repeat: repeat-x;  color: #FFFFFF; padding : 2px; vertical-align : middle; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+td#headerbanner {width: 100%; background-image: url(visual/neon-k_02.png);background-repeat: repeat-x; text-align:center;}
+
+td#leftcolumn {width: 200px;font-size:12px;}
+td#leftcolumn th {background-image: url(visual/th.png);background-repeat: repeat-x;  color: #FFFFFF; vertical-align: middle;}
+td#leftcolumn div.blockTitle {padding: 3px; color: #FFFFFF; font-weight: bold;}
+td#leftcolumn div.blockContent {padding: 3px; line-height: 120%; line-height: 120%;}
+
+
+#centercolumn {font-size: 12px;}
+#centercolumn th {background-image: url(visual/th.png);background-repeat: repeat-x;  color: #FFFFFF; vertical-align: middle;}
+
+#centerCcolumn, #bottomCcolumn {padding: 0px 3px 1px 3px;}
+#centerCcolumn .blockTitle, #bottomCcolumn .blockTitle {padding: 3px; color: #FFF; font-weight: bold; margin-top: 0px; margin-right: 0px;  margin-left: 0px;}
+#centerCcolumn .blockContent, #bottomCcolumn .blockContent { padding: 3px; margin-right: 0px;  margin-left: 0px; margin-bottom: 2px; line-height: 120%;}
+
+#centerLcolumn, #bottomLcolumn, #centerRcolumn, #bottomRcolumn {
+	width: 50%; padding: 0px 3px 0px 0px;
+}
+#centerLcolumn .blockTitle, #bottomLcolumn .blockTitle, #centerRcolumn .blockTitle, #bottomRcolumn .blockTitle {
+	padding: 3px; color: #FFF; font-weight: bold; margin-top: 0px;
+}
+#centerLcolumn .blockContent, #centerRcolumn .blockContent, #bottomLcolumn .blockContent, #bottomRcolumn .blockContent {
+	padding: 3px; margin-left: 2px; margin-right: 3px; margin-bottom: 2px; line-height: 120%;
+}
+
+div#content {text-align: left; padding: 8px;}
+
+td#rightcolumn {width: 200px; font-size:12px;}
+td#rightcolumn th {background-image: url(visual/th.png);background-repeat: repeat-x;  color: #FFFFFF; vertical-align: middle;}
+td#rightcolumn div.blockTitle {padding: 3px; color: #FFFFFF; font-weight: bold;}
+td#rightcolumn div.blockContent {padding: 3px; line-height: 120%;}
+
+td#footerbar {text-align:center;color: #c0e3fa;padding-bottom: 25px;padding-top: 25px;}
+td#footerbar a{color: #edeff1;}
+
+td#mainmenu a {display: block; margin: 0; padding: 4px;}
+td#mainmenu a:hover {}
+td#mainmenu a.menuTop {padding-left: 3px; }
+td#mainmenu a.menuMain {padding-left: 3px; }
+td#mainmenu a.menuSub {padding-left: 9px; }
+
+td#usermenu a {display: block; margin: 0; padding: 4px;}
+td#usermenu a:hover {}
+td#usermenu a.menuTop {}
+td#usermenu a.highlight {background-color: #fcc;}
+
+/* forms elements */
+input { border: 1px solid #CCCCCC;font-size: 11px; font-family: verdana, arial, helvetica, sans-serif; color: #333333;  background-color: #ffffff;padding-left:3px;background-color: #f7f7f7;}
+textarea {background-color: #f7f7f7;color: #333333; border: #CCCCCC 1px solid; width: 430px; font-size: 11px; font-family: verdana, arial, helvetica, sans-serif;}
+select {border: 1px solid #CCCCCC; font-size: 11px; font-family: verdana, arial, helvetica, sans-serif;}
+.formButton {background-color: #ece9e3;color: #676767;font-weight: bold;text-align:center;}
+input:focus, textarea:focus{background-color: #ffffff;border: 1px solid #9f9f9f;}
+
+
+.outer {border: 1px solid silver;}
+.head {background-color: #06037a; padding: 5px; font-weight: bold;}
+.even {background-color: #021628; padding: 5px;}
+.odd {background-color: #203950; padding: 5px;}
+.foot {background-color: #06037a; padding: 5px; font-weight: bold;}
+tr.even td {background-color: #021628; padding: 5px;}
+tr.odd td {background-color: #203950; padding: 5px;}
+
+div.errorMsg { background-color: #FFCCCC; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg { background-color: #DDFFDF; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg { background-color : #CCCCCC; color: #333333; text-align: center; border-top: 1px solid silver; border-left: 1px solid silver; font-weight: bold; border-right: 1px solid #666666; border-bottom: 1px solid #666666; padding: 10px;}
+
+div.xoopsCode { background: #FFFFFF; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+div.xoopsQuote { background: #FFFFFF; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+
+
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 10px; color: #2F5376; font-weight:bold; border: 1px solid silver; background-color: #ffffff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #2F5376; font-weight:bold; font-size: 10px;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 10px;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: smaller}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+
+.blocks {margin-bottom: 5px;}
+.cornerTLC {background-image: url(visual/block_01.png);height: 45px;width: 40px;
+	background-repeat: no-repeat;background-position: left;}
+.cornerTC {background-image: url(visual/block_03.png);background-repeat: repeat-x;}
+.cornerTR {background-image: url(visual/block_05.png);background-repeat: no-repeat;
+	background-position: right;height: 45px;width: 25px;}
+.cornerTMC {background-image: url(visual/main_01.png);height: 45px;width: 40px;
+	background-repeat: no-repeat;background-position: left;}
+.cornerTCM {background-image: url(visual/main_03.png);background-repeat: repeat-x;}
+.cornerTRM {background-image: url(visual/main_05.png);background-repeat: no-repeat;
+	background-position: right;height: 45px;width: 25px;}
+.cornerTLB {background-image: url(visual/left_01.png);height: 15px;width: 32px;
+	background-repeat: no-repeat;background-position: left;}
+.cornerTCB {background-image: url(visual/left_03.png);background-repeat: repeat-x;}
+.cornerTRB {background-image: url(visual/left_05.png);background-repeat: no-repeat;
+	background-position: right;height: 15px;width: 32px;}
+.cornerBL {background-image: url(visual/block_10.png);height: 37px;width: 24px;
+	background-repeat: no-repeat;background-position: left;}
+.cornerBC {background-image: url(visual/block_12.png);background-repeat: repeat-x;}
+.cornerBR {background-image: url(visual/block_13.png);height: 37px;width: 40px;
+	background-repeat: no-repeat;background-position: right;}
+.cornerCC {background-image: url(visual/block_08.png);background-repeat: repeat;
+	background-position: top;}
+.cornerCL {background-image: url(visual/block_06.png);background-repeat: repeat-y;
+	background-position: left;width: 10px;vertical-align: top;}
+.cornerCR {background-image: url(visual/block_09.png);background-repeat: repeat-y;
+	background-position: right;width: 10px;vertical-align: top;}
+
+
+#digihead ul {
+    margin: 0;
+    padding: 1.3em 0 0 0;
+    list-style: none;
+}
+
+#digihead li {
+    list-style: none;
+    float: left;
+    white-space: nowrap;
+}
+
+#digihead li a {
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0 0 0 4px;
+    text-decoration: none;
+    background-image: url( 'visual/tableftB.png' );
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+#digihead a span {
+    float: left;
+    display: block;
+    background-image: url( 'visual/tabrightB.png' );
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    padding: 5px 15px 4px 6px;
+    color: #FFF;
+}
+
+#digihead a:hover span, #navigation .selected {
+    color: #000;
+    background-color: transparent;
+}
+
+#digihead a:hover, #navigation .selected {
+    background-position: 0% -42px;
+}
+
+#digihead a:hover span, #navigation .selected span {
+    background-position: 100% -42px;
+    color: #000000;
+    background-color: transparent;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<!-- Theme by Aph3x http://www.aphexthemes.com -->
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+  <table class="toptable" cellspacing="0">
+    <tr>
+      <td><img src="<{$xoops_imageurl}>visual/neon-k_01.png" width="133" height="208" alt="" /></td>
+      <td id="headerbanner">
+	<div id="Stitle"><h1><{$xoops_sitename}></h1></div>
+	<br />
+	<div id="Sslogan"><h3><{$xoops_slogan}></h3></div>
+   <div id="digihead">
+     <ul>
+            <li><a href="#" accesskey="1" class="selected"><span>Home</span></a></li>
+            <li><a href="#"><span>About</span></a></li>
+            <li><a href="#"><span>News</span></a></li>
+            <li><a href="#"><span>Links</span></a></li>
+            <li><a href="#" accesskey="9"><span>Contact</span></a></li>
+        </ul>
+</div>
+</td>
+      <td><img src="<{$xoops_imageurl}>visual/neon-k_03.png" width="193" height="208" alt="" /></td>
+ </tr>
+  </table>
+
+  <table class="maintable" cellspacing="0">
+    <tr>
+      <td id="leftcolumn">
+        <!-- Start left blocks loop -->
+        <{foreach item=block from=$xoops_lblocks}>
+          <{include file="neon-k/blocks.html"}>
+        <{/foreach}>
+        <!-- End left blocks loop -->
+
+      </td>
+
+      <td id="centercolumn">
+        <!-- Display center blocks if any -->
+        <{if $xoops_showcblock == 1}>
+        <table cellspacing="0">
+		<tr>
+			<td id="centerCcolumn" colspan="2">
+			<!-- Start center-center blocks loop -->
+			<{foreach item=block from=$xoops_ccblocks}>
+				<{include file="neon-k/blocks.html"}>
+			<{/foreach}>
+			<!-- End center-center blocks loop -->
+			</td>
+		</tr>
+		<tr>
+			<td id="centerLcolumn">		
+			<!-- Start center-left blocks loop -->
+			<{foreach item=block from=$xoops_clblocks}>
+				<{include file="neon-k/blocks.html"}>
+			<{/foreach}>
+			<!-- End center-left blocks loop -->
+			</td>
+			<td id="centerRcolumn">		
+			<!-- Start center-right blocks loop -->
+			<{foreach item=block from=$xoops_crblocks}>
+				<{include file="neon-k/blocks.html"}>
+			<{/foreach}>
+			<!-- End center-right blocks loop -->
+			</td>
+		</tr>
+        </table>
+        <{/if}>
+        <!-- End display center blocks -->
+      <{if $xoops_contents}>
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0" class="blocks">
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0" >
+      <tr>
+        <td class="cornerTMC">&nbsp;</td>
+        <td class="cornerTCM">&nbsp;</td>
+        <td class="cornerTRM">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+  <td class="cornerCL"><img src="<{$xoops_imageurl}>visual/block_06.png" alt="" width="24" height="39" /></td>
+  <td class="cornerCC">
+		<div>
+  <div id="content">
+          <{$xoops_contents}>
+        </div>
+         </div>
+		</td>
+         <td class="cornerCR"><img src="<{$xoops_imageurl}>visual/block_09.png" alt="" width="25" height="39" /></td>
+     </tr>
+    </table></td>  </tr>
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="cornerBL">&nbsp;</td>
+        <td class="cornerBC">&nbsp;</td>
+        <td class="cornerBR">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+    <{/if}>
+	  <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+        <table cellspacing="0">
+        <{if $xoBlocks.page_bottomcenter}>
+		<tr><td id="bottomCcolumn" colspan="2">
+			<{foreach from=$xoBlocks.page_bottomcenter item=block}><{include file="neon-k/blocks.html"}><{/foreach}>
+			</td>
+		</tr>
+		<{/if}>
+		<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+		<tr>
+			<td id="bottomLcolumn">
+				<{foreach from=$xoBlocks.page_bottomleft item=block}><{include file="neon-k/blocks.html"}><{/foreach}>
+			</td>
+			<td id="bottomRcolumn">
+				<{foreach from=$xoBlocks.page_bottomright item=block}><{include file="neon-k/blocks.html"}><{/foreach}>
+			</td>
+		</tr>
+        <{/if}>
+        </table>
+        <{/if}>
+      </td>
+      <{if $xoops_showrblock == 1}>
+      <td id="rightcolumn">
+        <!-- Start right blocks loop -->
+        <{foreach item=block from=$xoops_rblocks}>
+          <{include file="neon-k/blocks.html"}>
+        <{/foreach}>
+        <!-- End right blocks loop -->
+      </td>
+      <{/if}>
+    </tr>
+  </table>
+  		<table class="footertable" cellspacing="0">
+    		<tr>
+          		<td id="footerbar">
+					<{$xoops_footer}>
+				</td>
+    		</tr>
+  		</table>
+</body>
+</html>
